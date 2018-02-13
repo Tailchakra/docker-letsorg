@@ -87,6 +87,11 @@
     </Variable>
     <Variable>
       <Value/>
+      <Name>AIRSONIC_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
       <Name>TAUTULLI_URL</Name>
       <Mode/>
     </Variable>
@@ -193,6 +198,7 @@
   <Config Name="Orgnaizr Branch" Target="ORG_BRANCH" Default="V1" Mode="" Description="Organizr branch to install" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Plex URL" Target="PLEX_URL" Default="" Mode="" Description="URL to Reverse Proxy with" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Ombi URL" Target="OMBI_URL" Default="" Mode="" Description="URL to Reverse Proxy with" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Airsonic URL" Target="AIRSONIC_URL" Default="" Mode="" Description="URL to Reverse Proxy with" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Tautulli URL" Target="TAUTULLI_URL" Default="" Mode="" Description="URL to Reverse Proxy with" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Sonarr URL" Target="SONARR_URL" Default="" Mode="" Description="URL to Reverse Proxy with" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Radarr URL" Target="RADARR_URL" Default="" Mode="" Description="URL to Reverse Proxy with" Type="Variable" Display="always" Required="false" Mask="false"></Config>
