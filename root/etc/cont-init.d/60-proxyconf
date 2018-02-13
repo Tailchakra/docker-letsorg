@@ -49,6 +49,12 @@ if [ ! -z "$OMBI_URL" ]; then
     ln -s /config/nginx/rproxy-available/ombi.conf /config/nginx/rproxy-enabled/ombi.conf
 fi
 
+echo "[LetsOrg] Checking for Airsonic..."
+if [ ! -z "$AIRSONIC_URL" ]; then
+    sed -i 's!%%%AIRSONIC_URL%%%!'$AIRSONIC_URL'!' /config/nginx/rproxy-available/airsonic.conf
+    ln -s /config/nginx/rproxy-available/airsonic.conf /config/nginx/rproxy-enabled/airsonic.conf
+fi
+
 echo "[LetsOrg] Checking for Guacamole..."
 if [ ! -z "$GUACAMOLE_URL" ]; then
     sed -i 's!%%%GUACAMOLE_URL%%%!'$GUACAMOLE_URL'!' /config/nginx/rproxy-available/guacamole.conf
